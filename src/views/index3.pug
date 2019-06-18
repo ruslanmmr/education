@@ -4,41 +4,40 @@ html(lang="ru")
     include blocks/head
   body.compensate-scrollbar
     .wrapper
-      .background.lazy(data-src='img/backgrounds/bg1.jpeg')
+      .background.lazy(data-src='img/backgrounds/bg2.jpeg')
       .wrapper__container
         include blocks/header
-        +header('Поступи в ВУЗ мечты')
+        +header('Более 90 баллов за ЕГЭ')
         main.main
           .container
-            h1.title Поступи в ВУЗ мечты без репетиторов<br> и занятий с учебниками
-            h2.sub-title пошаговое онлайн обучение даст тебе более 90 баллов на ЕГЭ
+            h1.title   Хочешь сдать ЕГЭ на 90+ баллов<br> и поступить в ТОПовый ВУЗ?  
             .advantages.row
               .advantages__block.col-xl-4.col-12
                 .advantages__icon 
                   <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
-                span Онлайн-обучение в любой точке
+                span Онлайн-обучение в удобное время
               .advantages__block.col-xl-4.col-12
                 .advantages__icon 
                   <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
-                span Беспроцентная рассрочка при оплате
+                span Любой уровень подготовки
               .advantages__block.col-xl-4.col-12
                 .advantages__icon 
                   <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
-                span Обучение в игровой форме
+                span Первый урок бесплатно
             form(action="").main-form
-              span.main-form__title Получите первый урок бесплатно прямо сейчас
+              span.main-form__title Узнай как правильно подготовиться к ЕГЭ, чтобы сдать его лучше 98% учеников
               .main-form__container.row
                 .main-form__section.col-xl-4.col-lg-12
                   input(type="text" placeholder="Ваше имя" required).input
                 .main-form__section.col-xl-4.col-lg-12
                   input(type="number" placeholder="Ваш телефон" required).input
                 .main-form__section.col-xl-4.col-lg-12
-                  button(type='submit').button  Посмотреть первый урок бесплатно
+                  button(type='submit').button  Узнать
                 .confirm.col-12
                   span  Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с 
                     a(href="#popup2").popup-open Политикой конфиденциальности
     include blocks/footer
-    +footer('Поступи в ВУЗ мечты')
+    +footer('Более 90 баллов за ЕГЭ')
     //
     include blocks/popup
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")

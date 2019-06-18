@@ -1,16 +1,17 @@
-footer.footer
-  .container
-    .footer__container
-      .logo.footer__logo
-        h2.logo__text Поступи в ВУЗ мечты
-      .mail-item
-        .label Пишите нам в любое время: 
-        span.mail-item__mail struchkova@shagk100.ru
-      .contact-item.footer__contact-item
-        .contact-item__number
-          a(href="tel:+79689168371") +7 (968) 916-83-71
-        .contact-item__call-me-btn
-          a(href="#popup1").popup-open Перезвоните мне
-    .footer__info
-      span ИП Стручкова Юлия Михайловна
-      span ИНН 771544504094
+mixin footer(title)
+  footer.footer
+    .container
+      .footer__container
+        .logo.footer__logo
+          h2.logo__text=title
+        .mail-item
+          .label Пишите нам в любое время: 
+          span.mail-item__mail struchkova@shagk100.ru
+        .contact-item.footer__contact-item
+          .contact-item__number
+            a(href="tel:+79689168371") +7 (968) 916-83-71
+          .contact-item__call-me-btn
+            a(href="#popup1").popup-open Перезвоните мне
+      .footer__info
+        span ИП Стручкова Юлия Михайловна
+        span ИНН 771544504094

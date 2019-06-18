@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__logo {
+    margin-right: 20px;
+  }
 }
 .logo {
   font-size: 26px;
@@ -18,6 +21,7 @@
   a {
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
   }
   &__call-me-btn {
     line-height: 1.25;

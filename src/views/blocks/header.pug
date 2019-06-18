@@ -1,10 +1,11 @@
-header.header
-  .container
-    .header__container
-      .logo.header__logo
-        h2.logo__text Поступи в ВУЗ мечты
-      .contact-item.header__contact-item
-        .contact-item__number
-          a(href="tel:+79689168371") +7 (968) 916-83-71
-        .contact-item__call-me-btn
-          a(href="#popup1").popup-open Перезвоните мне
+mixin header(title)
+  header.header
+    .container
+      .header__container
+        .logo.header__logo
+          h2.logo__text=title
+        .contact-item.header__contact-item
+          .contact-item__number
+            a(href="tel:+79689168371") +7 (968) 916-83-71
+          .contact-item__call-me-btn
+            a(href="#popup1").popup-open Перезвоните мне
