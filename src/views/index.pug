@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+  body.compensate-scrollbar
+    .wrapper
+      .background.lazy(data-src='img/backgrounds/bg1.jpeg')
+      .wrapper__container
+        include blocks/header
+        main.main
+          .container
+            h1.title Поступи в ВУЗ мечты без репетиторов<br> и занятий с учебниками
+            h2.sub-title пошаговое онлайн обучение даст тебе более 90 баллов на ЕГЭ
+            .advantages.row
+              .advantages__block.col-xl-4.col-12
+                .advantages__icon 
+                  <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
+                span Онлайн-обучение в любой точке
+              .advantages__block.col-xl-4.col-12
+                .advantages__icon 
+                  <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
+                span Беспроцентная рассрочка при оплате
+              .advantages__block.col-xl-4.col-12
+                .advantages__icon 
+                  <svg class="icon"><use xlink:href="img/icons/icons-sprite.svg#icon-check"></use></svg>
+                span Обучение в игровой форме
+            form(action="").main-form
+              span.main-form__title Получите первый урок бесплатно прямо сейчас
+              .main-form__container.row
+                .main-form__section.col-xl-4.col-lg-12
+                  input(type="text" placeholder="Ваше имя" required).input
+                .main-form__section.col-xl-4.col-lg-12
+                  input(type="number" placeholder="Ваш телефон" required).input
+                .main-form__section.col-xl-4.col-lg-12
+                  button(type='submit').button  Посмотреть первый урок бесплатно
+                .confirm.col-12
+                  span  Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с 
+                    a(href="#popup2").popup-open Политикой конфиденциальности
+    include blocks/footer
+    //
+    include blocks/popup
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="js/libs.min.js")            
+    script(src="js/common.min.js")
